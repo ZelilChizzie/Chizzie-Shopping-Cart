@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="appliance">
+            <div class="logo">
+                Zelil<span>Chizzie</span>
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house-user"></i> Home</li>
+                <li><i class="fa-solid fa-user"></i> User</li>
+                <li><i class="fa-solid fa-heart"></i> Favourite</li>
+            </ul>
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <h2>PRODUCTS</h2>
+            <div class="list">
+                <div class="item"data-key="1">
+                    <div class="img">
+                        <img src="blender.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Blender With Grill</div>
+                        <div class="des">
+                            300W BLG-412 - Gray
+                        </div>
+                        <div class="price">#20,650</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div> 
+                
+                <div class="item"data-key="2">
+                    <div class="img">
+                        <img src="alminium quality pot.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Alminium Quality Pot</div>
+                        <div class="des">
+                            Mater Chef 6Pc>
+                        </div>
+                        <div class="price">#18,000</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                    
+                <div class="item"data-key="3">
+                    <div class="img">
+                         <img src="electric oven.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Century Electric Oven</div>
+                        <div class="des">
+                            For Baking, Toastin, Re-heating and Grilling 11L
+                        </div>
+                        <div class="price">#21,500</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                    
+                <div class="item"data-key="4">
+                    <div class="img">
+                        <img src="smoothie blender with tap.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Smoothie Blender</div>
+                        <div class="des">
+                             Master Chef Smoothie Blender With Dispensing tap
+                        </div>
+                        <div class="price">#18,900</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item"data-key="5">
+                    <div class="img">
+                        <img src="maxi standing gas cooker.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Maxi Standing Gas Cooker</div>
+                        <div class="des">
+                            50*50 (3+1)
+                        </div>
+                        <div class="price">#83,268</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item"data-key="6">
+                    <div class="img">
+                        <img src="split air conditioner.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Split Air Conditioner</div>
+                        <div class="des">
+                            With Full Installation Kit <br>
+                            R410 NX-MSS.9000SC
+                        </div>
+                        <div class="price">#167,400</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="name">CART</div>
+            <div class="listCart">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
